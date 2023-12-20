@@ -1,0 +1,50 @@
+/* Fonts that are used in whole project */
+@font-face {
+    font-family: mainFont;
+    src: url(../Assets/Fonts/Nudista/nudista.otf);
+}
+
+@font-face {
+    font-family: mainFontBold;
+    src: url("../Assets/Fonts/Nudista/nudista-bold.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: mainFont;
+}
+
+body {
+    background: linear-gradient(90deg, #FC6A00 -0.76%, #000 53.29%);
+}
+
+#image {
+    position: relative;
+    margin-top: 8%;
+    margin-left: 33.5%;
+}
+
+#title {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 30%;
+
+    font-size: 2vw;
+    color: #fff;
+    letter-spacing: 1.3vw;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+    #image{
+        margin-left: 6%;
+    }
+
+    #title {
+        margin-top: -3%;
+        font-size: 3vw;
+        margin-left: 24%;
+    }
+}
+
