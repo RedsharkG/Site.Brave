@@ -1,12 +1,12 @@
 /* Fonts that are used in whole project */
 @font-face {
     font-family: mainFont;
-    src: url(../Assets/Fonts/Nudista/nudista.otf);
+    src: url(../fonts/Nudista/nudista.otf);
 }
 
 @font-face {
     font-family: mainFontBold;
-    src: url("../Assets/Fonts/Nudista/nudista-bold.otf");
+    src: url("../fonts/Nudista/nudista-bold.otf");
 }
 
 * {
