@@ -1,0 +1,117 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Apply a general style to the header */
+header {
+    background: #000000;
+    color: #fff;
+    width: 100%;
+    align-content: center;
+}
+
+/* Center the header content using flexbox */
+#header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 5%; /* Adjust padding as needed */
+}
+
+/* Style the navigation list */
+#header-nav {
+    list-style: none;
+    display: flex;
+    white-space: nowrap;
+}
+
+/* Style the navigation items */
+#header-nav li {
+    text-align: center;
+    margin-right: 8%; /* Adjust margin as needed */
+}
+
+/* Style the navigation links */
+#header-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3vw;
+    white-space: nowrap;
+}
+
+/* Style the dropdown container */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown items */
+.dropdown li {
+    display: block;
+}
+
+/* Show the dropdown on hover */
+#header-nav li:hover .dropdown {
+    display: block;
+}
+
+/* Adjust dropdown position */
+.dropdown li {
+    position: relative;
+}
+
+/* Style the dropdown links */
+.dropdown a {
+    display: block;
+    padding: 10px;
+}
+
+/* Adjust alignment and spacing within dropdown */
+.dropdown li {
+    text-align: left;
+    margin: 0;
+}
+
+/* Add some styling to the active link */
+#header-nav a.active {
+    background-color: #555;
+}
+
+/* Apply styles to the header links */
+#header-nav a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Apply styles to the dropdown links */
+.dropdown a {
+    padding: 10px 20px;
+}
+
+/* Add some styling to the dropdown links on hover */
+.dropdown a:hover {
+    background-color: #555;
+}
+
+/* Make the header responsive */
+@media screen and (max-width: 600px) {
+    #header-nav {
+        flex-direction: column;
+    }
+
+    #header-nav li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
